@@ -1,0 +1,22 @@
+%  \'''/ //      BumbleBEE       / \_/ \_/ \
+% -(|||)(')     (15/06/2017)     \_/ \_/ \_/
+%   ^^^        by Amit Metodi    / \_/ \_/ \
+%
+%  reading BEE file ... done
+%  load pl-satSolver ... %  encoding BEE model ... done
+%  solving CNF (satisfy) ...
+x4 = 1
+x1 = 6
+x3 = 11
+e2 = 9
+e3 = 5
+e4 = 12
+e1 = 4
+x2 = 10
+e5 = 8
+e7 = 2
+x5 = 3
+e6 = 7
+k = 25
+----------
+==========
