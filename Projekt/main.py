@@ -38,7 +38,8 @@ if __name__ == '__main__':
 
     with open(constraints_filename, 'w') as result_file:
         result_file.write(graph_help.generated_csp)
-    os.system(f'./BumbleBEE {constraints_filename} > {result_filename}')
+    os.system(f'./BumbleBEE {constraints_filename} > {result_filename} ')
+    os.system(f'./BumbleBEE {constraints_filename} -dimacs dimacs.cnf dimacs.map')
 
     result = get_result_string()
     result_dictionary = result_string_to_dict(result)
