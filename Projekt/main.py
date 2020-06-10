@@ -1,16 +1,16 @@
-import networkx as nx
-import json
-from pprint import pprint
-import matplotlib.pyplot as plt
-from collections import defaultdict
 import os
 from graph import graph_helper
 import consts
+import sys
 
 constraints_filename = "Data/constraints.txt"
 result_filename = "Data/result.txt"
-graph_json_filename = "Data/graph2.json"
-
+graph_json_filename = ""
+if len(sys.argv) > 1:
+    graph_json_filename = sys.argv[1]
+else:
+    graph_json_filename = "Data/graph.json"
+graph_json_result_filename = "Data/graph_result.json"
 
 def get_result_string():
     to_return = None
@@ -49,6 +49,9 @@ if __name__ == '__main__':
         result_json = graph.read()
         for x in result_dictionary:
             result_json = result_json.replace(x, result_dictionary[x])
+    
+    with open (graph_json_result_filename,'w') as result_json_file:
+        result_json_file.write(str(result_json))
 
     graph_help.generate_graph(result_json)
     graph_help.show_graph()
