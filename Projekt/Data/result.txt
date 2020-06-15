@@ -5,14 +5,18 @@
 %  reading BEE file ... done
 %  load pl-satSolver ... %  encoding BEE model ... done
 %  solving CNF (satisfy) ...
-x1 = 1
-e3 = 4
-x2 = 6
-e4 = 8
-x3 = 7
-x4 = 2
-e1 = 5
-e2 = 3
-k = 14
+e1 = 1
+x1 = 12
+x4 = 4
+e4 = 7
+x2 = 11
+x3 = 9
+e3 = 5
+x5 = 10
+e7 = 2
+e5 = 3
+e6 = 6
+e2 = 8
+k = 22
 ----------
 ==========
