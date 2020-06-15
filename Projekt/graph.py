@@ -41,8 +41,9 @@ class graph_helper:
         for label in self.graph_labels:
             generated_string = generated_string + f"new_int({label},1,{labels_len})\n"
             temp = temp + f'{label},'
-        # create magic label => k
+
         generated_string = generated_string + f'int_array_allDiff([{temp[:-1]}])\n'
+        # create magic label => k
 
         generated_string = generated_string + f'new_int(k,1,{labels_len * 10})\n'
 

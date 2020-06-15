@@ -38,6 +38,7 @@ if __name__ == '__main__':
 
     with open(constraints_filename, 'w') as result_file:
         result_file.write(graph_help.generated_csp)
+
     os.system(f'./BumbleBEE {constraints_filename} > {result_filename} ')
     os.system(f'./BumbleBEE {constraints_filename} -dimacs dimacs.cnf dimacs.map')
 
@@ -50,7 +51,7 @@ if __name__ == '__main__':
         for x in result_dictionary:
             result_json = result_json.replace(x, result_dictionary[x])
     
-    with open (graph_json_result_filename,'w') as result_json_file:
+    with open (graph_json_result_filename, 'w') as result_json_file:
         result_json_file.write(str(result_json))
 
     graph_help.generate_graph(result_json)
